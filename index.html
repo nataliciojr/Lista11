@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metadados da página -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Campos</title>
+
+    <!-- Importa o JavaScript do framework jMaskWiFi -->
+    <script type="text/javascript" src="jMaskWiFi.js"></script>
+    <script type="text/javascript" src="js.js"></script>
+</head>
+
+<body>
+    <!-- Formulário de validação -->
+    <form>
+
+        <!-- Campo: Data de Nascimento -->
+        <label>Data de nascimento:</label>
+        <input type="text" id="dataNascimento" onKeyPress="inserirMascara('dataNascimento', 'dd/mm/aaaa')"
+            placeholder="Ex: 01/01/2000">
+        <button type="button" onclick="validarDataNascimento()">Validar</button>
+        <br>
+
+        <!-- Adicione os outros campos do formulário conforme necessário -->
+
+        <!-- Campo: Cronômetro (jMakWiFi) -->
+        <label>Cronômetro (jMakWiFi):</label>
+        <input type="text" id="cronometro" onKeyPress="inserirMascara('cronometro', 'HH:MM:SS:CC')"
+            placeholder="Ex: 12:34:56:78">
+        <button type="button" onclick="validarCronometro()">Validar</button>
+        <br>
+
+        <!-- ... (código anterior) ... -->
+
+        <!-- Campo: CPF (jMakWiFi) -->
+        <label>CPF (jMakWiFi):</label>
+        <input type="text" id="cpf" onKeyPress="inserirMascara('cpf', 'xxx.xxx.xxx-xx')"
+            placeholder="Ex: 123.456.789-09">
+        <button type="button" onclick="validarCPF()">Validar</button>
+        <br>
+
+        <!-- Campo: Número de matrícula de um aluno -->
+        <label>Número de matrícula de um aluno:</label>
+        <input type="text" id="matricula" onKeyPress="inserirMascara('matricula', 'IFTM-xxx/xxx-yy')"
+            placeholder="Ex: IFTM-123/456-AB">
+        <button type="button" onclick="validarMatricula()">Validar</button>
+        <br>
+
+        <!-- Campo: Código de uma disciplina do IFTM (jMakWiFi) -->
+        <label>Código de uma disciplina do IFTM (jMakWiFi):</label>
+        <input type="text" id="codigoDisciplina" onKeyPress="inserirMascara('codigoDisciplina', 'MT-xx.xxx-IFTM')"
+            placeholder="Ex: MT-12.345-IFTM">
+        <button type="button" onclick="validarCodigoDisciplina()">Validar</button>
+        <br>
+
+        <!-- Campo: Código de uma disciplina do IFTM (versão 2) (jMakWiFi) -->
+        <label>Código de uma disciplina do IFTM (versão 2) (jMakWiFi):</label>
+        <input type="text" id="codigoDisciplinaV2" onKeyPress="inserirMascara('codigoDisciplinaV2', 'MT-xx.xxx-IFTM')"
+            placeholder="Ex: MT-12.345-IFTM">
+        <button type="button" onclick="validarCodigoDisciplinaV2()">Validar</button>
+        <br>
+
+        <!-- Campo: Código de uma disciplina do IFTM (versão 3) -->
+        <label>Código de uma disciplina do IFTM (versão 3):</label>
+        <input type="text" id="codigoDisciplinaV3" onKeyPress="inserirMascara('codigoDisciplinaV3', 'MT-xx.xxx-IFTM')"
+            placeholder="Ex: MT-12.345-IFTM">
+        <button type="button" onclick="validarCodigoDisciplinaV3()">Validar</button>
+        <br>
+
+        <!-- Campo: Nome de campus do IFTM -->
+        <label>Nome de campus do IFTM:</label>
+        <input type="text" id="nomeCampus" placeholder="Digite o nome do campus">
+        <button type="button" onclick="validarNomeCampus()">Validar</button>
+        <br>
+
+        <!-- Campo: Telefone (jMakWiFi) -->
+        <label>Telefone (jMakWiFi):</label>
+        <input type="text" id="telefone" onKeyPress="inserirMascara('telefone', '+yy(xx)xxxxx-xxxx')"
+            placeholder="Ex: +55(31)98765-4321">
+        <button type="button" onclick="validarTelefone()">Validar</button>
+        <br>
+
+        <!-- Campo: Telefone (versão 2) -->
+        <label>Telefone (versão 2):</label>
+        <input type="text" id="telefoneV2" onKeyPress="inserirMascara('telefoneV2', '(xx)zyyyyy-wwww')"
+            placeholder="Ex: (31)98765-4321">
+        <button type="button" onclick="validarTelefoneV2()">Validar</button>
+        <br>
+
+        <!-- Campo: Altura de uma pessoa -->
+        <label>Altura de uma pessoa:</label>
+        <input type="text" id="altura" onKeyPress="inserirMascara('altura', 'x,xz')" placeholder="Ex: 1,75">
+        <button type="button" onclick="validarAltura()">Validar</button>
+        <br>
+
+        <!-- Campo: Faturamento anual de uma empresa -->
+        <label>Faturamento anual de uma empresa:</label>
+        <input type="text" id="faturamento" placeholder="Digite o faturamento">
+        <button type="button" onclick="validarFaturamento()">Validar</button>
+        <br>
+
+        <!-- Campo: Cronômetro (jMakWiFi) -->
+        <label>Cronômetro (jMakWiFi):</label>
+        <input type="text" id="cronometroV2" onKeyPress="inserirMascara('cronometroV2', 'HH:MM:SS:CC')"
+            placeholder="Ex: 12:34:56:78">
+        <button type="button" onclick="validarCronometroV2()">Validar</button>
+        <br>
+
+     
+
+    </form>
+
+   
+</body>
+
+</html>
